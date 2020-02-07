@@ -19,11 +19,11 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'Nice to meet you! My name is Edmond, an aspiring Full-Stack Web Developer. On December 2018, I fell in love with the capabilities of web development after creating my first few projects. I was hooked ever since, from constantly learning new things everyday and applying it by building websites and applications for the real world is an exhilarating experience.',
+    "Hello there! I'm Edmond, a Front-End Web Developer based in NY. In December 2018, I fell in love with the capabilities of web development after creating my first few web projects and deploying them onto the internet.",
   paragraphTwo:
-    'Currently my primary goal is to build a strong front-end foundation with JavaScript and React. Then further on as I build upon my experiences, I want to delve into full-stack development like learning more about back-end technologies like NodeJS, Express, GraphQL, and Python.',
+    'Currently, my primary goal is to build a strong front-end foundation with JavaScript and React. Then further on as I build upon my experiences, I want to delve into full-stack web development to develop exceptional websites and web applications that have intuitive and aesthetic user interfaces that also utilize efficient and modern back-end technologies.',
   paragraphThree:
-    'Other than web development, I have passions for cooking, health & fitness, gaming, anime, learning about the latest tech, dabbling in mobile app & game development, financial investments, traveling, and of course 🐶 doggos.',
+    'Other than web development, I have passions for cooking, health & fitness, gaming, anime, VR/AR development, AI, dabbling in mobile app & game development, financial investments, traveling, and of course 🐶 doggos.',
   resume: '../images/resume/resume.pdf',
 };
 
