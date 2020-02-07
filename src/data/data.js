@@ -2,7 +2,7 @@ import uuidv1 from 'uuid/v1';
 
 // HEAD DATA
 export const headData = {
-  title: 'Edmond | Front-End Developer',
+  title: 'EJM | Portfolio',
   lang: 'en, es, fr, jp', // e.g: en, es, fr, jp
   description: 'Welcome to my Portfolio',
 };
@@ -104,18 +104,6 @@ export const footerData = {
   networks: [
     {
       id: uuidv1(),
-      title: 'Twitter',
-      name: 'twitter',
-      url: 'https://twitter.com/edjunma',
-    },
-    {
-      id: uuidv1(),
-      title: 'CodePen',
-      name: 'codepen',
-      url: 'https://codepen.io/edjunma/',
-    },
-    {
-      id: uuidv1(),
       title: 'LinkedIn',
       name: 'linkedin',
       url: 'https://www.linkedin.com/in/edjunma/',
@@ -125,6 +113,36 @@ export const footerData = {
       title: 'GitHub',
       name: 'github',
       url: 'https://github.com/edjunma',
+    },
+    {
+      id: uuidv1(),
+      title: 'Twitter',
+      name: 'twitter',
+      url: 'https://twitter.com/edjunma',
+    },
+    {
+      id: uuidv1(),
+      title: 'Instagram',
+      name: 'instagram',
+      url: 'https://www.instagram.com/edjunma/',
+    },
+    {
+      id: uuidv1(),
+      title: 'CodePen',
+      name: 'codepen',
+      url: 'https://codepen.io/edjunma/',
+    },
+    {
+      id: uuidv1(),
+      title: 'FreeCodeCamp',
+      name: 'free-code-camp',
+      url: 'https://www.freecodecamp.org/edjunma',
+    },
+    {
+      id: uuidv1(),
+      title: 'Dev.to',
+      name: 'dev',
+      url: 'https://dev.to/edjunma',
     },
   ],
 };
