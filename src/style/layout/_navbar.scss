@@ -1,5 +1,6 @@
 nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
@@ -26,8 +27,29 @@ nav {
   color: #333;
   font-size: 20px;
   cursor: pointer;
+  display: none;
 }
 
 .hamburger:focus {
   outline: none;
+}
+
+@media screen and(max-width: 768px) {
+  .nav-ul {
+		display: none;
+		flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-ul li a {
+    padding: 10px;
+  }
 }
