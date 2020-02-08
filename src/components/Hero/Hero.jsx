@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect, Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
@@ -22,34 +22,30 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
-      <div className="navbar-links">
-        <ul>
-          <li>
-            <a href="#hero" className="current">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a
-              href="https://ejm-gatsby-dev-blog.netlify.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Blog
-            </a>
-          </li>
-        </ul>
-      </div>
       <Container>
+        <nav>
+          <img src="../../images/favicon.png" alt="logo" className="logo" />
+          <button className="hamburger" id="hamburger" type="button">
+            <i className="fas fa-bars" />
+          </button>
+          <ul className="nav-ul" id="nav-ul">
+            <li>
+              <a href="#hero">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="https://ejm-gatsby-dev-blog.netlify.com/">Blog</a>
+            </li>
+          </ul>
+        </nav>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
