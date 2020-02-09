@@ -1,24 +1,43 @@
+#logo {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .nav-ul {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .nav-ul li a {
   display: inline-block;
   color: #333;
-  padding: 10px 20px;
   text-decoration: none;
+  color: $dark-blue-text;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+  margin: 2rem;
+  display: block;
+
+  &:hover {
+    transform: translateY(-2px);
+    text-shadow: 1px 1px 1px $primary-color;
+    border-bottom: 2px solid $secondary-color;
+  }
 }
 
 .hamburger {
@@ -36,8 +55,8 @@ nav {
 
 @media screen and(max-width: 768px) {
   .nav-ul {
-		display: none;
-		flex-direction: column;
+    display: none;
+    flex-direction: column;
     width: 100%;
   }
 

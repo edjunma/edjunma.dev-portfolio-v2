@@ -24,10 +24,14 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <nav>
-          <img src="../../images/favicon.png" alt="logo" className="logo" />
+          {/* Logo */}
+          <img src="../../images/logo.png" alt="logo" className="logo" />
+          {/* Implement Light/Dark Mode Button Toggle here in the future */}
+          {/* Mobile Hamburger Menu */}
           <button className="hamburger" id="hamburger" type="button">
             <i className="fas fa-bars" />
           </button>
+          {/* Navigation Bar */}
           <ul className="nav-ul" id="nav-ul">
             <li>
               <a href="#hero">Home</a>
