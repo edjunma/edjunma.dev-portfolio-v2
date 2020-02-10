@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <a href="#top" aria-label="Back To Top" className="back-to-top">
+        <a href="#top" aria-label="Back To Top" className="back-to-top" title="Back To Top">
           <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
         </a>
         <div className="social-links">

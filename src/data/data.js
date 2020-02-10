@@ -24,7 +24,7 @@ export const aboutData = {
   paragraphTwo:
     'Currently, my primary goal is to build a strong front-end foundation with JavaScript and React. Then further on as I build upon my experiences, I want to delve into full-stack web development to develop exceptional websites and web applications that have intuitive and aesthetic user interfaces that also utilize efficient and modern back-end technologies.',
   paragraphThree:
-    'Other than web development, I have passions for cooking, health & fitness, gaming, anime, VR/AR development, AI, dabbling in mobile app & game development, financial investments, traveling, and of course 🐶 doggos.',
+    'Other than web development, I have passions for cooking, health & fitness, gaming, anime, VR/AR development, dabbling in mobile app & game development, financial investments, traveling, and of course 🐶 doggos.',
   resume: '../images/resume/resume.pdf',
 };
 
