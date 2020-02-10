@@ -72,3 +72,11 @@ nav {
     padding: 10px;
   }
 }
+
+// Tablet Responsiveness
+@media only screen and (max-width: 768px) {
+	.nav-ul li a {
+		padding: 1rem;
+		margin: 1rem;
+	}
+}

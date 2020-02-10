@@ -13,6 +13,7 @@ export const heroData = {
   name: 'Edmond',
   subtitle: 'A Front-End Developer',
   cta: 'About Me',
+  image: 'logo.png',
 };
 
 // ABOUT DATA
@@ -31,7 +32,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv1(),
-    img: '../images/project-1-ecommerce.jpg',
+    img: 'project-1-ecommerce.jpg',
     title: 'CRWN-Clothing',
     info:
       'E-commerce web application made with React, Redux, Stripe, Firebase, ContextAPI, and React Hooks. Consists of routes to different clothing categories, add/delete cart function, checkout with Stripe payment, sign-in/sign-out users, and a register user feature.',
@@ -41,7 +42,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: '../images/project-2-face-recognition.jpg',
+    img: 'project-2-face-recognition.jpg',
     title: 'Face Recognition App',
     info:
       "Full-Stack web application built using HTML5, CSS3, JavaScript, and React, for the front-end with the Clarifai API to detect faces from the user's image URL inputs which then calls to the back-end API created with Node.js, Express.js, and PostgreSQL database to record user entries and log user accounts.",
@@ -51,7 +52,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: '../images/project-3-apex-legends-tracker.jpg',
+    img: 'project-3-apex-legends-tracker.jpg',
     title: 'Apex Legends Stats Tracker',
     info:
       'Full-Stack web application built using VueJS and Express utilizing the Tracker Network API from tracker.gg to track and display player stats from their respective platforms.',
@@ -61,7 +62,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: '../images/project-4-apple-mock.jpg',
+    img: 'project-4-apple-mock.jpg',
     title: 'Mock Apple Website',
     info:
       'Mock Apple Website design and code practice utilizing Bootstrap Studio as the framework for this project. Mock website was created with nav, grid, column, and image components for a responsive design.',
@@ -71,7 +72,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: '../images/project-5-react-real-estate.jpg',
+    img: 'project-5-react-real-estate.jpg',
     title: 'React Real-Estate App',
     info:
       'Real Estate Application made with React. MVP functionality with sorted filters for the real-estate listing data, different view functionality for listings with grid system, and page pagination.',
@@ -81,7 +82,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: '../images/project-6-gatsby-blog.jpg',
+    img: 'project-6-gatsby-blog.jpg',
     title: 'GatsbyJS Blog',
     info:
       'Functioning blog website developed with GatsbyJS and React for the UI and front-end. As part of GatsbyJS, GraphQL was used to fetch markdown files, blog posts, APIs, and plugins used for the blog website.',
