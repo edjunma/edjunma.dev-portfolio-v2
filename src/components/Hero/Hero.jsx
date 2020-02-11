@@ -5,7 +5,7 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle, cta, logo } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -26,14 +26,9 @@ const Header = () => {
         <nav>
           {/* Logo */}
           <div>
-            <img
-              id="logo"
-              className="img-fluid rounded"
-              height="auto"
-              width="auto"
-              src="../../images/logo.png"
-              alt="logo"
-            />
+            <a id="logo" href="https://github.com/edjunma" alt="logo">
+              <img alt="logo" src="../../images/logo.png" />
+            </a>
           </div>
           {/* Implement Light/Dark Mode Button Toggle here in the future */}
           {/* Mobile Hamburger Menu */}
@@ -65,6 +60,8 @@ const Header = () => {
             <span className="text-color-main">{name || 'Your Name'}</span>
             <br />
             {subtitle || "I'm the Unknown Developer."}
+            <span className="text-color-main">Front-End </span>
+            Developer
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
