@@ -25,7 +25,16 @@ const Header = () => {
       <Container>
         <nav>
           {/* Logo */}
-          <img src="../../images/logo.png" alt="logo" className="logo" />
+          <div>
+            <img
+              id="logo"
+              className="img-fluid rounded"
+              height="auto"
+              width="auto"
+              src="../../images/logo.png"
+              alt="logo"
+            />
+          </div>
           {/* Implement Light/Dark Mode Button Toggle here in the future */}
           {/* Mobile Hamburger Menu */}
           <button className="hamburger" id="hamburger" type="button">
