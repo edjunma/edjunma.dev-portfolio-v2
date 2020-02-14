@@ -31,15 +31,21 @@ const Header = () => {
             </a>
           </div>
           {/* Implement Light/Dark Mode Button Toggle here in the future */}
+          <div>
+            <input type="checkbox" className="checkbox" id="chk" />
+            <label className="label" htmlFor="chk">
+              <i className="fas fa-moon" />
+              <i className="fas fa-sun" />
+              <div className="ball" />
+            </label>
+          </div>
+
           {/* Mobile Hamburger Menu */}
           <button className="hamburger" id="hamburger" type="button">
             <i className="fas fa-bars" />
           </button>
           {/* Navigation Bar */}
           <ul className="nav-ul" id="nav-ul">
-            <li>
-              <a href="#hero">Home</a>
-            </li>
             <li>
               <a href="#about">About</a>
             </li>
