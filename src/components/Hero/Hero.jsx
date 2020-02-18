@@ -32,8 +32,8 @@ const Header = () => {
           </div>
           {/* Implement Light/Dark Mode Button Toggle here in the future */}
           <div>
-            <input type="checkbox" className="checkbox" id="chk" />
             <label className="label" htmlFor="chk">
+              <input type="checkbox" className="checkbox" id="chk" />
               <i className="fas fa-moon" />
               <i className="fas fa-sun" />
               <div className="ball" />
