@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `EJM Portfolio`,
-        short_name: `EJM Portfolio`,
+        name: `EJM | Front-End Developer`,
+        short_name: `EJM`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,

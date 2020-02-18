@@ -1,11 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import DarkModeToggle from '../Dark-Mode/darkModeToggle';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta, logo } = hero;
+  const { title, name, subtitle, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -30,15 +31,14 @@ const Header = () => {
               <img alt="logo" src="../../images/logo.png" />
             </a>
           </div>
-          {/* Implement Light/Dark Mode Button Toggle here in the future */}
-          <div>
-            <label className="label" htmlFor="chk">
-              <input type="checkbox" className="checkbox" id="chk" />
-              <i className="fas fa-moon" />
-              <i className="fas fa-sun" />
-              <div className="ball" />
-            </label>
-          </div>
+          {/* Light/Dark Mode Button Toggle */}
+          <DarkModeToggle
+            style={{
+              backgroundColor: 'var(--bg)',
+              color: 'var(--textNormal)',
+              transition: 'color 0.2s ease-out, background 0.2s ease-out',
+            }}
+          />
 
           {/* Mobile Hamburger Menu */}
           <button className="hamburger" id="hamburger" type="button">
