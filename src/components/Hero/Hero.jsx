@@ -32,13 +32,7 @@ const Header = () => {
             </a>
           </div>
           {/* Light/Dark Mode Button Toggle */}
-          <DarkModeToggle
-            style={{
-              backgroundColor: 'var(--bg)',
-              color: 'var(--textNormal)',
-              transition: 'color 0.2s ease-out, background 0.2s ease-out',
-            }}
-          />
+          <DarkModeToggle />
 
           {/* Mobile Hamburger Menu */}
           <button className="hamburger" id="hamburger" type="button">
