@@ -117,11 +117,11 @@ nav {
   width: 2rem;
 }
 
-.nav-ul.active li {
+.nav-ul.active nav-link {
   transform: scale(1);
 }
 
-.nav-ul.active a {
+.nav-ul.active nav-item {
   visibility: visible;
   transition-delay: initial;
 }
