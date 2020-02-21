@@ -43,17 +43,25 @@ const Header = () => {
 
           {/* Navigation Bar */}
           <ul className="nav-ul" id="nav-ul">
-            <li>
-              <a href="#about">About</a>
+            <li className="nav-item">
+              <a href="#about" className="nav-link">
+                About
+              </a>
             </li>
-            <li>
-              <a href="#projects">Projects</a>
+            <li className="nav-item">
+              <a href="#projects" className="nav-link">
+                Projects
+              </a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li className="nav-item">
+              <a href="#contact" className="nav-link">
+                Contact
+              </a>
             </li>
-            <li>
-              <a href="https://ejm-gatsby-dev-blog.netlify.com/">Blog</a>
+            <li className="nav-item">
+              <a href="https://ejm-gatsby-dev-blog.netlify.com/" className="nav-link">
+                Blog
+              </a>
             </li>
           </ul>
         </nav>
