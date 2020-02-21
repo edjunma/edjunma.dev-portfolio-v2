@@ -35,9 +35,12 @@ const Header = () => {
           <DarkModeToggle />
 
           {/* Mobile Hamburger Menu */}
-          <button className="hamburger" id="hamburger" type="button">
-            <i className="fas fa-bars" />
-          </button>
+          <div className="hamburger">
+            <span className="line" />
+            <span className="line" />
+            <span className="line" />
+          </div>
+
           {/* Navigation Bar */}
           <ul className="nav-ul" id="nav-ul">
             <li>

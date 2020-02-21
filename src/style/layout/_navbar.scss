@@ -41,16 +41,52 @@ nav {
 }
 
 .hamburger {
-  background-color: transparent;
-  border: 0;
-  color: #333;
-  font-size: 20px;
+  width: 3.6rem;
+  height: 1.8rem;
+  position: relative;
   cursor: pointer;
-  display: none;
+  line-height: 5rem;
+  z-index: 1500;
 }
 
-.hamburger:focus {
-  outline: none;
+.hamburger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  display: block;
+  right: 0;
+  transition: all 650ms;
+}
+
+.hamburger .line:nth-child(1) {
+  top: 0;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 50%;
+  margin-top: -1px;
+  width: 2.8rem;
+}
+
+.hamburger .line:nth-child(3) {
+  top: 100%;
+  margin-top: -2px;
+  width: 2rem;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(0.8rem) rotate(45deg);
+  width: 2rem;
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-0.8rem) rotate(-45deg);
+  width: 2rem;
 }
 
 // Light & Dark Mode Toggle CSS
@@ -82,14 +118,14 @@ body.light-mode {
   }
 
   .nav-ul li a {
-    padding: 10px;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 
-// Tablet Responsiveness
-@media only screen and (max-width: 768px) {
-  .nav-ul li a {
-    padding: 1rem;
-    margin: 1rem;
+// Mobile Responsiveness
+@media only screen and (max-width: 600px) {
+  #logo img {
+    display: none;
   }
 }
