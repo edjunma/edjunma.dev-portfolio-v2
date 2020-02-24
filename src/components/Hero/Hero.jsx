@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import DarkModeToggle from '../Dark-Mode/darkModeToggle';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
@@ -32,8 +31,14 @@ const Header = () => {
             </a>
           </div>
           {/* Light/Dark Mode Button Toggle */}
-          <DarkModeToggle />
-
+          <div>
+            <input type="checkbox" className="checkbox" id="chk" />
+            <label className="label" htmlFor="chk">
+              <i className="fas fa-moon" />
+              <i className="fas fa-sun" />
+              <div className="ball" />
+            </label>
+          </div>
           {/* Mobile Hamburger Menu */}
           <div className="hamburger">
             <span className="line" />
