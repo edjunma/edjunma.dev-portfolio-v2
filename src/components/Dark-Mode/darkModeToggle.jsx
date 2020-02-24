@@ -10,6 +10,7 @@ const Wrapper = styled(animated.div)`
   margin-right: ${({ mobile }) => (mobile ? '0rem' : '0.5rem')};
   position: ${({ mobile }) => (mobile ? 'relative' : 'absolute')};
   right: ${({ mobile }) => (mobile ? null : '0')};
+
   & input {
     position: absolute;
     right: 252rem;
@@ -61,7 +62,7 @@ const Label = styled.label`
   position: relative;
   right: 250rem;
   width: 52px;
-  height: 26px;
+  height: 27px;
   background-color: #87ceeb;
   border-radius: 90px;
   transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
