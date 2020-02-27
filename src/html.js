@@ -25,18 +25,19 @@ export default function HTML({
         {preBodyComponents}
         <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
         {postBodyComponents}
+        <script src="https://kit.fontawesome.com/561f520f53.js" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            const chk = document.getElementById('chk');
-            
-            chk.addEventListener('change',() => {
-              document.body.classList.toggle('dark');
-            });
-        `,
+            const hamburger = document.getElementById('hamburger');
+            const navUL = document.getElementById('nav-ul);
+
+            hamburger.addEventListener('click', () => {
+              navUL.classList.toggle('show');
+            })
+`,
           }}
         />
-        <script src="https://kit.fontawesome.com/561f520f53.js" crossOrigin="anonymous" />
       </body>
     </html>
   );

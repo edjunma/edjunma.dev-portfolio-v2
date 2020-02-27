@@ -25,26 +25,12 @@ const Header = () => {
       <Container>
         <nav>
           {/* Logo */}
-          <div>
-            <a id="logo" href="https://github.com/edjunma" alt="logo">
-              <img alt="logo" src="../../images/logo.png" />
-            </a>
-          </div>
-          {/* Light/Dark Mode Button Toggle */}
-          <div>
-            <input type="checkbox" className="checkbox" id="chk" />
-            <label className="label" htmlFor="chk">
-              <i className="fas fa-moon" />
-              <i className="fas fa-sun" />
-              <div className="ball" />
-            </label>
-          </div>
+          <img alt="logo" className="logo" src="../../images/logo.png" />
           {/* Mobile Hamburger Menu */}
-          <div className="hamburger">
-            <span className="line" />
-            <span className="line" />
-            <span className="line" />
-          </div>
+          <button className="hamburger" id="hamburger">
+            <i className="fas fa-bars" />
+          </button>
+          {/* Light/Dark Mode Button Toggle */}
 
           {/* Navigation Bar */}
           <ul className="nav-ul" id="nav-ul">
@@ -70,6 +56,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        {/* Hero */}
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
