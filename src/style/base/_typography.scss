@@ -66,7 +66,7 @@ a:hover {
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: $darkmode-secondary-color;
+    -webkit-text-fill-color: $darkmode-primary-color;
   }
 
   &:hover {

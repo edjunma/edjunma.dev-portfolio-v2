@@ -27,11 +27,8 @@ const Header = () => {
           {/* Logo */}
           <img alt="logo" className="logo" src="../../images/logo.png" />
           {/* Mobile Hamburger Menu */}
-          <button className="hamburger" id="hamburger">
-            <i className="fas fa-bars" />
-          </button>
           {/* Light/Dark Mode Button Toggle */}
-
+          <i className="fas fa-snowflake" />
           {/* Navigation Bar */}
           <ul className="nav-ul" id="nav-ul">
             <li className="nav-item">

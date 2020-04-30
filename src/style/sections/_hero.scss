@@ -63,3 +63,15 @@
     }
   }
 }
+
+.fa-snowflake {
+  animation: fall 10s linear forwards;
+  position: absolute;
+  top: -20px;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
