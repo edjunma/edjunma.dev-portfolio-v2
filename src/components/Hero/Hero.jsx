@@ -26,8 +26,9 @@ const Header = () => {
         <nav>
           {/* Logo */}
           <img alt="logo" className="logo" src="../../images/logo.png" />
-          {/* Mobile Hamburger Menu */}
+          {/* Mobile Hamburger Navigation Menu */}
           {/* Light/Dark Mode Button Toggle */}
+          {/* Snowflake Background */}
           <i className="fas fa-snowflake" />
           {/* Navigation Bar */}
           <ul className="nav-ul" id="nav-ul">
