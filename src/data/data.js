@@ -95,8 +95,8 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta:
-    'Fancy a conversation with tea 🍵 or coffee ☕? Please feel free to connect with me on my email or social links below. I will get back to you as soon as possible.',
-  btn: "Let's Talk! 🤝🏼",
+    'Please feel free to contact and connect with me through my email or social media links below. I will get back to you as soon as possible with some ☕ and 🍪.',
+  btn: "Let's Talk Business! 🤝🏼",
   email: 'edjunma@gmail.com',
 };
 

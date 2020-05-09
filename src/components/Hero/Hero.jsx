@@ -10,6 +10,16 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  const burger = document.getElementById('burger');
+  const ul = document.querySelector('nav ul');
+
+  window.onload = function() {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('show-x');
+      ul.classList.toggle('show');
+    });
+  };
+
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -25,35 +35,35 @@ const Header = () => {
       <Container>
         <nav>
           {/* Logo */}
-          <img alt="logo" className="logo" src="../../images/logo.png" />
+          {/* <img alt="logo" className="logo" src="../../images/logo.png" /> */}
+          <p>EJM</p>
+
           {/* Mobile Hamburger Navigation Menu */}
-          {/* Light/Dark Mode Button Toggle */}
-          {/* Snowflake Background */}
-          <i className="fas fa-snowflake" />
+          <button id="burger" className="burger" type="button">
+            <div className="bar" />
+            <div className="bar" />
+          </button>
+
           {/* Navigation Bar */}
-          <ul className="nav-ul" id="nav-ul">
-            <li className="nav-item">
-              <a href="#about" className="nav-link">
-                About
-              </a>
+          <ul>
+            <li>
+              <a href="#about">About</a>
             </li>
-            <li className="nav-item">
-              <a href="#projects" className="nav-link">
-                Projects
-              </a>
+            <li>
+              <a href="#projects">Projects</a>
             </li>
-            <li className="nav-item">
-              <a href="#contact" className="nav-link">
-                Contact
-              </a>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
-            <li className="nav-item">
-              <a href="https://ejm-gatsby-dev-blog.netlify.com/" className="nav-link">
-                Blog
-              </a>
+            <li>
+              <a href="https://ejm-gatsby-dev-blog.netlify.com/">Blog</a>
             </li>
           </ul>
         </nav>
+
+        {/* Light/Dark Mode Button Toggle */}
+        {/* Snowflake Background */}
+        <i className="fas fa-snowflake" />
 
         {/* Hero */}
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">

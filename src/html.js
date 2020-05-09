@@ -29,12 +29,13 @@ export default function HTML({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            const hamburger = document.getElementById('hamburger');
-            const navUL = document.getElementById('nav-ul);
+            const burger = document.getElementById('burger');
+            const ul = document.querySelector('nav ul');
 
-            hamburger.addEventListener('click', () => {
-              navUL.classList.toggle('show');
-            })
+            burger.addEventListener('click', () => {
+              burger.classList.toggle('show-x');
+              ul.classList.toggle('show');
+            });
 
             setInterval(createSnowFlake, 50);
 
