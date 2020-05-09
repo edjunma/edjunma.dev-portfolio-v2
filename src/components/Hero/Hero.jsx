@@ -20,6 +20,24 @@ const Header = () => {
     });
   };
 
+  const createSnowFlake = () => {
+    const snowflake = document.createElement('i');
+    snowflake.classList.add('fas');
+    snowflake.classList.add('fa-snowflake');
+    snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+    snowflake.style.animationDuration = `${Math.random() * 3 + 3}s`;
+    snowflake.style.opacity = Math.random();
+    snowflake.style.fontSize = `${Math.random() * 10 + 10}px`;
+
+    document.body.appendChild(snowflake);
+
+    setTimeout(() => {
+      snowflake.remove();
+    }, 5000);
+  };
+
+  setInterval(createSnowFlake, 600);
+
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -36,7 +54,9 @@ const Header = () => {
         <nav>
           {/* Logo */}
           {/* <img alt="logo" className="logo" src="../../images/logo.png" /> */}
-          <p>EJM</p>
+          <a href="https://github.com/edjunma">
+            <p>&#60;EJM&#62;</p>
+          </a>
 
           {/* Mobile Hamburger Navigation Menu */}
           <button id="burger" className="burger" type="button">
@@ -62,6 +82,7 @@ const Header = () => {
         </nav>
 
         {/* Light/Dark Mode Button Toggle */}
+
         {/* Snowflake Background */}
         <i className="fas fa-snowflake" />
 

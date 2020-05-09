@@ -28,33 +28,7 @@ export default function HTML({
         <script src="https://kit.fontawesome.com/561f520f53.js" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `
-            const burger = document.getElementById('burger');
-            const ul = document.querySelector('nav ul');
-
-            burger.addEventListener('click', () => {
-              burger.classList.toggle('show-x');
-              ul.classList.toggle('show');
-            });
-
-            setInterval(createSnowFlake, 50);
-
-            function createSnowFlake() {
-              const snow_flake = document.createElement('i);
-              snow_flake.classlist.add('fas');
-              snow_flake.classlist.add('fa-snowflake');
-              snow_flake.style.left = Math.random() * window.innerWidth + 'px';
-              snow_flake.style.animationDuration = Math.random() * 3 + 2 + 's';
-              snow_flake.style.opacity = Math.random();
-              snow_flake.style.fontSize = Math.random() * 10 + 10 + 'px';
-
-              document.body.appendChild(snow_flake);
-
-              setTimeout(() => {
-                snow_flake.remove();
-              }, 5000)
-            }
-`,
+            __html: ``,
           }}
         />
       </body>
