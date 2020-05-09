@@ -55,17 +55,41 @@
     font-size: 3rem;
     width: 5rem;
     height: 5rem;
-    margin: $default-font-size $default-font-size;
+    margin: $default-font-size;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
     transition: all 0.2s ease-in;
 
     &:hover {
       transform: translateY(-3px);
+      transform: scale(1.1);
+      border-radius: 50%;
     }
   }
 
-  .fab.fa-linkedin:hover {
+  a i::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-size: 200% 200%;
+    background-position: 75% 75%;
+    top: 0;
+    left: 0;
+    line-height: 80px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.5s linear;
+  }
+
+  a:hover i::before {
+    background-position: 0% 0%;
+  }
+
+  .fab.fa-linkedin::before {
     color: #0077b5;
-    transition: 0.3s;
+    background-image: linear-gradient(135deg, #007bb5 30%, #0a3d62 50%);
   }
 
   .fab.fa-github:hover {
