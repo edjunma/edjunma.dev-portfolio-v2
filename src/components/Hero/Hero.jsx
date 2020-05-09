@@ -33,7 +33,7 @@ const Header = () => {
 
     setTimeout(() => {
       snowflake.remove();
-    }, 5000);
+    }, 3000);
   };
 
   setInterval(createSnowFlake, 600);

@@ -43,27 +43,25 @@
 }
 
 .social-links {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
 
   a {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    justify-content: center;
-    color: $white-color;
     font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin: $default-font-size;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
     overflow: hidden;
-    transition: all 0.2s ease-in;
+    transition: 0.3s linear;
+    position: relative;
 
     &:hover {
-      transform: translateY(-3px);
-      transform: scale(1.1);
+      transform: scale(1.2);
       border-radius: 50%;
     }
   }
@@ -88,38 +86,31 @@
   }
 
   .fab.fa-linkedin::before {
-    color: #0077b5;
-    background-image: linear-gradient(135deg, #007bb5 30%, #0a3d62 50%);
+    background-image: linear-gradient(135deg, #007bb5 50%, #fff 50%);
   }
 
-  .fab.fa-github:hover {
-    color: #131418;
-    transition: 0.3s;
+  .fab.fa-github::before {
+    background-image: linear-gradient(135deg, #131418 50%, #fff 50%);
   }
 
-  .fab.fa-twitter:hover {
-    color: #55acee;
-    transition: 0.3s;
+  .fab.fa-twitter::before {
+    background-image: linear-gradient(135deg, #1da1f2 50%, #fff 50%);
   }
 
-  .fab.fa-instagram:hover {
-    color: #e4405f;
-    transition: 0.3s;
+  .fab.fa-instagram::before {
+    background-image: linear-gradient(135deg, #c32aa3 50%, #fff 50%);
   }
 
-  .fab.fa-codepen:hover {
-    color: #4c75a3;
-    transition: 0.3s;
+  .fab.fa-codepen::before {
+    background-image: linear-gradient(135deg, #4c75a3 50%, #fff 50%);
   }
 
-  .fab.fa-free-code-camp:hover {
-    color: #006400;
-    transition: 0.3s;
+  .fab.fa-free-code-camp::before {
+    background-image: linear-gradient(135deg, #006400 50%, #fff 50%);
   }
 
-  .fab.fa-dev:hover {
-    color: #02b875;
-    transition: 0.3s;
+  .fab.fa-dev::before {
+    background-image: linear-gradient(135deg, #02b875 50%, #fff 50%);
   }
 }
 
