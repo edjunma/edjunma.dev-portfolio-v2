@@ -20,24 +20,6 @@ const Header = () => {
     });
   };
 
-  const createSnowFlake = () => {
-    const snowflake = document.createElement('i');
-    snowflake.classList.add('fas');
-    snowflake.classList.add('fa-snowflake');
-    snowflake.style.left = `${Math.random() * window.innerWidth}px`;
-    snowflake.style.animationDuration = `${Math.random() * 3 + 3}s`;
-    snowflake.style.opacity = Math.random();
-    snowflake.style.fontSize = `${Math.random() * 10 + 10}px`;
-
-    document.body.appendChild(snowflake);
-
-    setTimeout(() => {
-      snowflake.remove();
-    }, 3000);
-  };
-
-  setInterval(createSnowFlake, 600);
-
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -83,9 +65,6 @@ const Header = () => {
 
         {/* Light/Dark Mode Button Toggle */}
 
-        {/* Snowflake Background */}
-        <i className="fas fa-snowflake" />
-
         {/* Hero */}
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
@@ -98,7 +77,7 @@ const Header = () => {
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
-            <a className="cta-btn cta-btn--hero" href="#about">
+            <a className="grd-btn" href="#about">
               {cta || 'Know more'}
             </a>
           </p>
