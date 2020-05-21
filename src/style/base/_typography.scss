@@ -73,3 +73,27 @@ a:hover {
     transform: translateX(2px);
   }
 }
+
+.animate-text-color {
+  background: radial-gradient(
+    circle,
+    #f48fb1 0%,
+    #ce93d8 20%,
+    #b2ebf2 40%,
+    #a5d6a7 60%,
+    #b39ddb 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: gradient 10s linear infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}

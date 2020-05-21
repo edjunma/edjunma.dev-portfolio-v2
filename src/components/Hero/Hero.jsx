@@ -37,7 +37,7 @@ const Header = () => {
           {/* Logo */}
           {/* <img alt="logo" className="logo" src="../../images/logo.png" /> */}
           <a href="https://github.com/edjunma">
-            <p>&#60;EJM&#62;</p>
+            <p className="animate-text-color">&#60;EJM&#62;</p>
           </a>
 
           {/* Mobile Hamburger Navigation Menu */}
@@ -69,10 +69,10 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
-            <span className="text-color-secondary">{name || 'Your Name'}</span>
+            <span className="text-color-main animate-text-color">{name || 'Your Name'}</span>
             <br />
             {subtitle || "I'm the Unknown Developer."}
-            <span className="text-color-main">Front-End Developer</span>
+            <span className="text-color-secondary">Front-End Developer</span>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

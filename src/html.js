@@ -28,7 +28,8 @@ export default function HTML({
         <script src="https://kit.fontawesome.com/561f520f53.js" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
-            __html: ``,
+            __html: `
+            `,
           }}
         />
       </body>
