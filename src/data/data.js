@@ -20,11 +20,11 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    "Hello 🦌! I'm Edmond, a Front-End Web Developer based in New York. During the Winter of 2018, I fell in love with the creativity and capabilities of web development after enrolling in development platforms such as FreeCodeCamp. Since then I've been repeatedly grinding out code, tackling difficult problems, exploring unfamiliar territory, and gaining experience by building countless web applications ranging from small web components to full-stack web applications everyday.",
+    "Hello there! My name is Edmond, a Front-End Web Developer based in New York. On the Winter of 2018, I fell in love with the creative capabilities of web development after enrolling in development platforms such as FreeCodeCamp. Since then I've been repeatedly grinding out code every day, from tackling difficult algorithm problems, to learning from some of the best books and online resources, getting out of tutorial hell by building countless projects ranging from small web components, product landing pages, e-commerce sites, to full-stack web applications.",
   paragraphTwo:
-    'Currently, my front-end experience includes HTML, CSS, Bootstrap, jQuery, JavaScript, React, and Gatsby. I also have competent knowledge and experience in server-side technologies such as Node.js, Express, MongoDB, MySQL, GraphQL, and Python.',
+    'Currently, my front-end experience includes HTML, CSS, Bootstrap, JavaScript, jQuery, React.js, and Gatsby. I also have competent knowledge and experience in server-side technologies such as Node.js, Express, MongoDB, MySQL, GraphQL, and Python.',
   paragraphThree:
-    'Other than web development, I have passions for cooking, traveling, health & fitness, gaming, VR/AR development, mobile development, e-commerce, financial investments, and the love of 🐶 doggos.',
+    'Other than web development, I have passions for cooking, traveling, health & fitness, gaming, VR/AR development, mobile development, e-commerce, financial investments, and most of all the love of doggos 🐶.',
   resume: 'https://edjunma.github.io/EJM-Resume/',
 };
 
