@@ -74,14 +74,38 @@ a:hover {
   }
 }
 
-.animate-text-color {
+.animate-text-color-main {
   background: radial-gradient(
     circle,
-    #f48fb1 0%,
-    #ce93d8 20%,
+    #70e1f5 0%,
+    #ffd194 20%,
     #b2ebf2 40%,
     #a5d6a7 60%,
     #b39ddb 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: gradient 10s linear infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.animate-text-color-secondary {
+  background: radial-gradient(
+    circle,
+    #7f7fd5 0%,
+    #86a8e7 20%,
+    #91eae4 40%,
+    #74ebd5 60%,
+    #acb6e5 100%
   );
   -webkit-background-clip: text;
   color: transparent;
