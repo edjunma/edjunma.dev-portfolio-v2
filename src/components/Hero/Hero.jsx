@@ -10,10 +10,22 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Light/Dark Mode
+  const toggleSwitch = document.querySelector('input[type="checkbox"]');
+  
+  // Switch Theme Dynamically
+  function switchTheme(event) {
+    if (event.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  }
+  
   const burger = document.getElementById('burger');
   const ul = document.querySelector('nav ul');
-
   window.onload = function() {
+    toggleSwitch.addEventListener('change', switchTheme);
     burger.addEventListener('click', () => {
       burger.classList.toggle('show-x');
       ul.classList.toggle('show');
@@ -37,7 +49,7 @@ const Header = () => {
           {/* Logo */}
           {/* <img alt="logo" className="logo" src="../../images/logo.png" /> */}
           <a href="https://github.com/edjunma">
-            <p className="animate-text-color">&#60;EJM&#62;</p>
+            <p className="animate-text-color-main">&#60;EJM&#62;</p>
           </a>
 
           {/* Dark Mode Switch */}
