@@ -40,6 +40,18 @@ const Header = () => {
             <p className="animate-text-color">&#60;EJM&#62;</p>
           </a>
 
+          {/* Dark Mode Switch */}
+          <div className="theme-switch-wrapper">
+            <span id="toggle-icon">
+              <span className="toggle-text">Light Mode</span>
+              <i className="fas fa-sun" />
+            </span>
+            <label className="theme-switch">
+              <input type="checkbox" />
+              <div className="slider round" />
+            </label>
+          </div>
+
           {/* Mobile Hamburger Navigation Menu */}
           <button id="burger" className="burger" type="button">
             <div className="bar" />
