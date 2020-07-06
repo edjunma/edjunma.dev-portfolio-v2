@@ -10,15 +10,6 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  const burger = document.getElementById('burger');
-  const ul = document.querySelector('nav ul');
-  window.onload = function() {
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('show-x');
-      ul.classList.toggle('show');
-    });
-  };
-
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -27,6 +18,15 @@ const Header = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
+
+    const burger = document.getElementById('burger');
+    const ul = document.querySelector('nav ul');
+    window.onload = function() {
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('show-x');
+        ul.classList.toggle('show');
+      });
+    };
   }, []);
 
   return (
