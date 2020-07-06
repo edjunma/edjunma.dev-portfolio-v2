@@ -10,22 +10,9 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Light/Dark Mode
-  const toggleSwitch = document.querySelector('input[type="checkbox"]');
-  
-  // Switch Theme Dynamically
-  function switchTheme(event) {
-    if (event.target.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  }
-  
   const burger = document.getElementById('burger');
   const ul = document.querySelector('nav ul');
   window.onload = function() {
-    toggleSwitch.addEventListener('change', switchTheme);
     burger.addEventListener('click', () => {
       burger.classList.toggle('show-x');
       ul.classList.toggle('show');
@@ -52,18 +39,6 @@ const Header = () => {
             <p className="animate-text-color-main">&#60;EJM&#62;</p>
           </a>
 
-          {/* Dark Mode Switch */}
-          <div className="theme-switch-wrapper">
-            <span id="toggle-icon">
-              <span className="toggle-text">Light Mode</span>
-              <i className="fas fa-sun" />
-            </span>
-            <label className="theme-switch">
-              <input type="checkbox" />
-              <div className="slider round" />
-            </label>
-          </div>
-
           {/* Mobile Hamburger Navigation Menu */}
           <button id="burger" className="burger" type="button">
             <div className="bar" />
@@ -86,8 +61,6 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-
-        {/* Light/Dark Mode Button Toggle */}
 
         {/* Hero */}
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">

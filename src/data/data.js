@@ -20,7 +20,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    "Hello there! My name is Edmond, a Front-End Web Developer based in New York. On the Winter of 2018, I fell in love with the capabilities of web development after learning from various resources such as FreeCodeCamp and YouTube. Since then I've been on the path of a self-taught developer striving to always improve by repeatedly grinding out code every day."
+    "Hello there! My name is Edmond, a Front-End Web Developer based in New York. On the Winter of 2018, I fell in love with the capabilities of web development after learning from various resources such as FreeCodeCamp and YouTube. Since then I've been on the path of a self-taught developer striving to always improve by repeatedly grinding out code every day.",
   paragraphTwo:
     'I currently have 2 years of experience in HTML, CSS, Bootstrap, JavaScript, jQuery, React.js, and Gatsby. I also have competent knowledge and experience in server-side technologies such as Node.js, Express, MongoDB, MySQL, GraphQL, and Python.',
   paragraphThree:
