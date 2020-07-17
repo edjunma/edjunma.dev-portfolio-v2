@@ -81,10 +81,10 @@ const About = () => {
             </Fade>
           </Col>
         </Row>
+        <a href="/#projects" className="about-arrow" title="View Projects">
+          <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+        </a>
       </Container>
-      <a href="#projects" className="about-arrow" title="View Projects">
-        <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
-      </a>
     </section>
   );
 };

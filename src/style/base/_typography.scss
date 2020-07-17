@@ -77,25 +77,16 @@ a:hover {
 .animate-text-color-main {
   background: radial-gradient(
     circle,
-    #c6ffdd 0%,
-    #fbd786 20%,
-    #f7797d 40%,
-    #faaca8 60%,
-    #4b1248 100%
+    #86E3CE 0%,
+    #D0E6A5 20%,
+    #FFDD94 40%,
+    #FA897B 60%,
+    #CCABD8 100%
   );
   -webkit-background-clip: text;
   color: transparent;
   background-size: 400%;
   animation: gradient 10s linear infinite alternate;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
 }
 
 .animate-text-color-secondary {

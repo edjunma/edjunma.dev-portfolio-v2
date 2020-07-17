@@ -18,50 +18,11 @@ const Header = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
-
-    const burger = document.getElementById('burger');
-    const ul = document.querySelector('nav ul');
-    window.onload = function() {
-      burger.addEventListener('click', () => {
-        burger.classList.toggle('show-x');
-        ul.classList.toggle('show');
-      });
-    };
   }, []);
 
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <nav>
-          {/* Logo */}
-          {/* <img alt="logo" className="logo" src="../../images/logo.png" /> */}
-          <a href="https://github.com/edjunma">
-            <p className="animate-text-color-main">&#60;EJM&#62;</p>
-          </a>
-
-          {/* Mobile Hamburger Navigation Menu */}
-          <button id="burger" className="burger" type="button">
-            <div className="bar" />
-            <div className="bar" />
-          </button>
-
-          {/* Navigation Bar */}
-          <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li>
-              <a href="https://ejm-gatsby-dev-blog.netlify.com/">Blog</a>
-            </li>
-          </ul>
-        </nav>
-
         {/* Hero */}
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
