@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const NavItem = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #0594ec;
   padding: 0.5rem;

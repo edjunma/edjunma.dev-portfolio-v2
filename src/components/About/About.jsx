@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'gatsby';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -81,9 +82,9 @@ const About = () => {
             </Fade>
           </Col>
         </Row>
-        <a href="/#projects" className="about-arrow" title="View Projects">
+        <Link to="/#projects" className="about-arrow" title="View Projects">
           <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
-        </a>
+        </Link>
       </Container>
     </section>
   );
