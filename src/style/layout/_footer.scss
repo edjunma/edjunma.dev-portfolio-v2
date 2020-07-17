@@ -21,9 +21,9 @@
       &:hover,
       &:active {
         color: $primary-color;
-        -webkit-box-shadow: 1.25rem 1.25rem 1.25rem rgba(0, 0, 0, 0.15);
-        box-shadow: 1.25rem 1.25rem 1.25rem rgba(0, 0, 0, 0.15);
-        font-weight: 600;
+        -webkit-box-shadow: 0.75rem 0.75rem 0.75rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0.75rem 0.75rem 0.75rem rgba(0, 0, 0, 0.15);
+        font-weight: 00;
         transform: rotate(3deg) scale(1.1) !important;
       }
     }

@@ -53,6 +53,7 @@ const Navbox = styled.div`
     background-color: #fff;
     transition: all 0.3s ease-in;
     top: 10vh;
+    cursor: pointer;
     left: ${props => (props.open ? '-100%' : '0')};
   }
 `;
@@ -109,41 +110,6 @@ const Navbar = () => {
       )}
     </Navigation>
   );
-
-  /* <nav>
-        <div className="inner-width">
-          {/* Logo */
-  // {/* <img alt="logo" className="logo" src="../../images/logo.png" /> */}
-  // <a href="https://github.com/edjunma" className="logo">
-  //   <p className="animate-text-color-main">&#60;EJM&#62;</p>
-  // </a>
-
-  // {/* Mobile Hamburger Navigation Menu */}
-  // <button id="burger" className="menu-toggler" type="button">
-  //   <span />
-  //   <span />
-  //   <span />
-  // </button>
-
-  // {/* Navigation Bar */}
-  //     <div className="navbar-menu">
-  //       <ul>
-  //         <li>
-  //           <a href="#about">About</a>
-  //         </li>
-  //         <li>
-  //           <a href="#projects">Projects</a>
-  //         </li>
-  //         <li>
-  //           <a href="#contact">Contact</a>
-  //         </li>
-  //         <li>
-  //           <a href="https://ejm-gatsby-dev-blog.netlify.com/">Blog</a>
-  //         </li>
-  //       </ul>
-  //     </div>
-  //   </div>
-  // </nav> */}
 };
 
 export default Navbar;
